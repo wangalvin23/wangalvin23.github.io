@@ -1,0 +1,457 @@
+@import url("https://fonts.googleapis.com/css2?family=Jost:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap");
+/* font-family: "Jost", sans-serif; */
+/* font-family: 'Lato', sans-serif; */
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Body */
+
+body {
+  background: #0f151c;
+  color: rgba(255, 255, 255, 0.9);
+  font-family: "Lato", sans-serif;
+  font-size: 24px;
+  line-height: 1.5;
+  min-height: 100vh;
+}
+
+.bodycontainer {
+  margin: auto;
+  max-width: 100%;
+  width: 1024px;
+}
+
+/* General */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Jost", sans-serif;
+}
+
+/* Navbar */
+
+.navbar {
+  display: flex;
+  align-items: center;
+  background-color: #121b26;
+  font-size: 16px;
+  height: 64px;
+}
+
+.navbar > .navcontainer {
+  margin: auto;
+  display: flex;
+  align-items: center;
+  height: 100%;
+  max-width: 100%;
+  width: 1024px;
+}
+
+.navbar > .navcontainer > a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.85);
+  height: 100%;
+}
+
+.navbar > .navcontainer > a > .navelement {
+  display: flex;
+  align-items: center;
+  transition-property: all;
+  transition-duration: 400ms;
+  height: 100%;
+  padding: 0px 24px;
+}
+
+.navbar > .navcontainer > a > .navelement:hover {
+  background-color: rgba(164, 74, 255, 0.075);
+  color: rgba(232, 235, 75, 0.85);
+}
+
+.navbar > .navcontainer > a > .navelement > h3 {
+  text-align: center;
+  width: 100%;
+}
+
+/* Footer */
+
+.footer {
+  background-color: #121b26;
+  color: rgba(255, 255, 255, 0.75);
+  height: 100%;
+}
+
+.footer > .footcontainer {
+  margin: auto;
+  display: flex;
+  align-items: center;
+  padding: 30px 0px;
+  width: 100%;
+}
+
+.footer > .footcontainer > .name > .update {
+  text-align: center;
+  font-size: 16px;
+  padding: 50px 0px 0px;
+  width: 100%;
+}
+
+.footer > .footcontainer > .name {
+  width: calc(100% / 3);
+}
+
+.footer > .footcontainer > .name > .nameq {
+  text-align: center;
+  font-size: 20px;
+  width: 100%;
+}
+
+.footer > .footcontainer > .name > .job {
+  text-align: center;
+  font-size: 16px;
+  width: 100%;
+}
+
+.footer > .footcontainer > .name > .slogan {
+  text-align: center;
+  font-size: 14px;
+  width: 100%;
+}
+
+.footer > .footcontainer > .footlink {
+  width: calc(100% / 3);
+}
+
+.footer > .footcontainer > .footlink > .header {
+  text-align: center;
+  text-decoration: underline;
+  font-size: 24px;
+}
+
+.footer > .footcontainer > .footlink > .footelement {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.footer > .footcontainer > .footlink > .footelement > a {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.75);
+  transition-property: all;
+  transition-duration: 400ms;
+}
+
+.footer > .footcontainer > .footlink > .footelement > a:hover {
+  text-decoration: underline;
+  color: rgba(232, 235, 75, 0.85);
+}
+
+/* Index */
+
+.title {
+  text-align: center;
+  padding: 350px 20px 500px;
+  font-size: 40px;
+}
+
+.paragraph {
+  font-size: 22px;
+  padding: 24px 0px 72px;
+}
+
+.paragraph > .text > .header {
+  text-align: center;
+  font-size: 36px;
+  padding: 48px 0px 0px;
+}
+
+.paragraph > .text > .description {
+  text-align: center;
+  font-size: 32px;
+  padding: 12px 0px 0px;
+}
+
+.paragraph > .text > p {
+  padding: 24px 0px 0px;
+}
+
+/* Blogs */
+
+.paragraph > .blog > .header {
+  text-align: center;
+  font-size: 36px;
+}
+
+.paragraph > .blog > .bloglink {
+  padding: 24px 0px;
+  width: 100%;
+}
+
+.paragraph > .blog > .bloglink > .link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.paragraph > .blog > .bloglink > .link > a {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 32px;
+  transition-property: all;
+  transition-duration: 400ms;
+}
+
+.paragraph > .blog > .bloglink > .link > a:hover {
+  text-decoration: underline;
+  color: rgba(232, 235, 75, 0.85);
+}
+
+.paragraph > .blog > .bloglink > .description {
+  text-align: center;
+  font-size: 24px;
+  width: 100%;
+}
+
+/* Creator */
+
+.creator {
+  display: flex;
+  align-items: center;
+  background: linear-gradient(90deg, #0f151c, #47463e, #0f151c);
+  color: rgba(255, 255, 255, 0.9);
+  padding: 100px 0px;
+}
+
+.creator > .creatorcontainer {
+  display: flex;
+  align-items: center;
+  padding: 0px 0px 0px 100px;
+  width: 50%;
+}
+
+.creator > .creatorcontainer > .name {
+  text-align: center;
+  width: 100%;
+}
+
+.creator > .creatorcontainer > .name > .nameq {
+  font-size: 84px;
+}
+
+.creator > .creatorcontainer > .name > .job {
+  font-size: 36px;
+}
+
+.creator > .creatorcontainer > .name > .slogan {
+  font-size: 32px;
+  padding: 20px 0px 0px;
+}
+
+.creator > .facecontainer {
+  display: flex;
+  align-items: center;
+  width: 50%;
+  padding: 0px 100px 0px 0px;
+}
+
+.creator > .facecontainer > .face {
+  flex-wrap: wrap;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.creator > .facecontainer > .face > .faceq {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Projects */
+
+.project {
+  display: flex;
+  align-items: center;
+  background: linear-gradient(0deg, #0f151c, #47463e);
+  color: rgba(255, 255, 255, 0.9);
+  padding: 50px 0px;
+  width: 100%;
+}
+
+.project > .projcontainer {
+  width: 75%;
+}
+
+.project > .projcontainer > .topic,
+.project > .projcontainer > .description {
+  text-align: center;
+  width: 100%;
+}
+
+.project > .projcontainer > .topic {
+  font-size: 56px;
+}
+
+.project > .projcontainer > .description {
+  font-size: 28px;
+}
+
+.project > .pictures {
+  flex-wrap: wrap;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+}
+
+.project > .pictures > .picq {
+  width: 300px;
+}
+
+.project > .pictures > .picq > img {
+  width: 100%;
+}
+
+/* Art Galleries */
+
+.gallery > section > .row {
+  background: rgba(255, 251, 222, 0.125);
+}
+
+.gallery > section > .row > .bodycontainer {
+  display: flex;
+  align-items: center;
+  max-width: 100%;
+  width: 1024px;
+}
+
+.gallery > section > .row > .bodycontainer > .header {
+  color: rgba(232, 235, 75, 0.85);
+  font-size: 20px;
+  padding: 50px 20px;
+  width: 50%;
+}
+
+.gallery > section > .row > .bodycontainer > .header > h2 {
+  width: 100%;
+}
+
+.gallery > section > .row > .bodycontainer > .artnav {
+  display: flex;
+  align-items: center;
+  width: 50%;
+}
+
+.gallery > section > .row > .bodycontainer > .lastartnav {
+  display: flex;
+  align-items: center;
+  padding: 30px 0px;
+  width: 100%;
+}
+
+.gallery > section > .row > .bodycontainer > .artnav > .navcontainer,
+.gallery > section > .row > .bodycontainer > .lastartnav > .navcontainer {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.gallery
+  > section
+  > .row
+  > .bodycontainer
+  > .artnav
+  > .navcontainer
+  > .navelement,
+.gallery
+  > section
+  > .row
+  > .bodycontainer
+  > .lastartnav
+  > .navcontainer
+  > .navelement {
+  display: flex;
+  align-items: center;
+  width: calc(100% / 3);
+}
+
+.gallery
+  > section
+  > .row
+  > .bodycontainer
+  > .artnav
+  > .navcontainer
+  > .navelement
+  > a,
+.gallery
+  > section
+  > .row
+  > .bodycontainer
+  > .lastartnav
+  > .navcontainer
+  > .navelement
+  > a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition-property: all;
+  transition-duration: 400ms;
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.85);
+  font-size: 14px;
+  width: 100%;
+}
+
+.gallery
+  > section
+  > .row
+  > .bodycontainer
+  > .artnav
+  > .navcontainer
+  > .navelement
+  > a:hover,
+.gallery
+  > section
+  > .row
+  > .bodycontainer
+  > .lastartnav
+  > .navcontainer
+  > .navelement
+  > a:hover {
+  text-decoration: underline;
+  color: rgba(232, 235, 75, 0.85);
+}
+
+.gallery > section > .row > .pictures {
+  flex-wrap: wrap;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #fffbde;
+  padding: 20px;
+}
+
+.gallery > section > .row > .pictures > .picq {
+  padding: 10px;
+  height: 640px;
+}
+
+.picq > img {
+  display: block;
+  height: 100%;
+}
